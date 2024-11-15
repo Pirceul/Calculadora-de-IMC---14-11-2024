@@ -1,0 +1,25 @@
+
+
+#include <stdio.h>
+#include <math.h>
+
+int main(){
+    // Variaveis
+    
+    float A, P; // Altura, Peso
+
+        // Entrada
+
+        printf("Insira o Peso da pessoa: ");
+        scanf("%f", &P);
+        printf("Insira a Altura da pessoa: ");
+        scanf("%f", &A);
+
+        float A_Q = pow(A, 2); //A_Q = Altura * Altura
+        float IMC = P / A_Q; 
+
+        printf("O IMC do produto é de %.2f\n", IMC);
+        printf("Tabela IMC \n Magro ou baixo peso <18.5\n Normal ou Eutrofico 18.5 - 24,9\n Sobrepeso ou Pre-Obeso 25 - 29,9\n Obesidade I 30 - 34,9\n Obesidade II 35 - 39,9");
+        return 0;
+
+}
